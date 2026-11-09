@@ -24,6 +24,15 @@ public:
         std::cout << "FastInterceptor moving in a zigzag pattern.\n";
     }
 };
+// Added by Kaydan Maxey: Derived Class 3 (Armored Drone)
+class ArmoredDrone : public Enemy {
+private:
+    int armorHealth = 3;
+public:
+    void move() override {
+        std::cout << "ArmoredDrone descending slowly with heavy shielding (HP: " << armorHealth << ").\n";
+    }
+};
 
 int main() {
     std::cout << "=== Sky Defending Starting Program ===\n\n";
